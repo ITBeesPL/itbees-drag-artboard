@@ -1,0 +1,16 @@
+:host {
+    display: block;
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+}
+
+.grid {
+    $grid-color: #ddd;
+    $grid-stroke-size: 1px;
+    $grid-size: 20px;
+    width: 4000px;
+    height: 4000px;
+    background-image: linear-gradient($grid-color $grid-stroke-size, transparent $grid-stroke-size), linear-gradient(90deg, $grid-color $grid-stroke-size, transparent $grid-stroke-size);
+    background-size: calc($grid-size - 1px) calc($grid-size - 1px);
+}
