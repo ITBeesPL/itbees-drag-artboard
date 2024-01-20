@@ -7,8 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './toolbox.component.html',
-  styleUrl: './toolbox.component.scss',
-  providers: [ArtboardService]
+  styleUrl: './toolbox.component.scss'
 })
 export class ToolboxComponent implements OnInit {
   constructor(private artboardService: ArtboardService) {}
