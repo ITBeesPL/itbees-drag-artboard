@@ -6,27 +6,35 @@
     position: relative;
 }
 
-.grid {
-    $grid-color: #ddd;
-    $grid-stroke-size: 1px;
-    $grid-size: 20px;
+.canvas {
     width: 4000px;
     height: 4000px;
-    background-image: linear-gradient($grid-color $grid-stroke-size, transparent $grid-stroke-size), linear-gradient(90deg, $grid-color $grid-stroke-size, transparent $grid-stroke-size);
-    background-size: calc($grid-size - 1px) calc($grid-size - 1px);
     z-index: -1;
+    &.grid {
+        $grid-color: #ddd;
+        $grid-stroke-size: 1px;
+        $grid-size: 20px;
+        background-image: linear-gradient($grid-color $grid-stroke-size, transparent $grid-stroke-size), linear-gradient(90deg, $grid-color $grid-stroke-size, transparent $grid-stroke-size);
+        background-size: calc($grid-size) calc($grid-size);
+    }
 }
 
 app-toolbox {
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 app-library {
-    position: absolute;
+    position: fixed;
     top: 50%;
-    left: 10px;
+    left: 30px;
     transform: translateY(-50%);
+}
+
+app-item {
+    position: absolute;
+    width: 200px;
+    height: 200px;
 }

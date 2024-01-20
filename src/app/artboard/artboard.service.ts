@@ -4,7 +4,7 @@ export type ToolType = "DRAG" | "ZOOM" | "SELECT" | "REMOVE";
 
 @Injectable()
 export class ArtboardService {
-  activeTool = signal<ToolType>("DRAG");
+  activeTool = signal<ToolType>("SELECT");
 
   constructor() { }
 }
