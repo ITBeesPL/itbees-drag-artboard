@@ -3,6 +3,7 @@
     background-color: white;
     height: 100%;
     overflow: auto;
+    position: relative;
 }
 
 .grid {
@@ -13,4 +14,12 @@
     height: 4000px;
     background-image: linear-gradient($grid-color $grid-stroke-size, transparent $grid-stroke-size), linear-gradient(90deg, $grid-color $grid-stroke-size, transparent $grid-stroke-size);
     background-size: calc($grid-size - 1px) calc($grid-size - 1px);
+    z-index: -1;
+}
+
+app-toolbox {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
