@@ -1,11 +1,12 @@
 import { Component, HostBinding, OnInit, WritableSignal, effect } from '@angular/core';
 import { ToolboxComponent } from '../toolbox/toolbox.component';
 import { ArtboardService, ToolType } from '../artboard.service';
+import { LibraryComponent } from '../library/library.component';
 
 @Component({
   selector: 'app-artboard',
   standalone: true,
-  imports: [ToolboxComponent],
+  imports: [ToolboxComponent, LibraryComponent],
   templateUrl: './artboard.component.html',
   styleUrl: './artboard.component.scss',
   providers: [ArtboardService]

@@ -1,0 +1,5 @@
+<div *ngFor="let item of items; let i = index" class="item"
+     [style.background-color]="item.color"
+     [ngClass]="{ 'active': activeIndex === i }"
+     (click)="activeIndex = i">
+</div>

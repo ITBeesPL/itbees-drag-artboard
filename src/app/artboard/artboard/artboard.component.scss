@@ -23,3 +23,10 @@ app-toolbox {
     left: 50%;
     transform: translateX(-50%);
 }
+
+app-library {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
